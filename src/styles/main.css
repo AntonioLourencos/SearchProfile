@@ -1,0 +1,260 @@
+:root {
+  --color-background-black: #000f08;
+  --color-primary: #8257e6;
+  --color-primary-hover: #9466ff;
+  --color-shape: #202024;
+  --color-shape-hover: #29292e;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-pop-up-backgroud: #00000090;
+
+  --primary-font: "Dosis", sans-serif;
+  --secundary-font: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 15.8px;
+  color: var(--color-white);
+  background-color: var(--color-background-black);
+  font-family: var(--primary-font-font);
+}
+
+button,
+input {
+  color: var(--secundary-color);
+  background-color: var(--color-shape-hover);
+  font-family: var(--secundary-font);
+  font-weight: 600;
+}
+
+ol,
+ul,
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+}
+
+.hr {
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-primary-hover);
+  margin: 7px 0px;
+}
+
+.button {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 1rem;
+
+  border: none;
+  outline: none;
+  transition: 300ms;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  margin: 5px;
+
+  font-weight: 700;
+  font-size: 1.8rem;
+
+  border-bottom: 2px solid var(--color-primary);
+  border-radius: 5px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 35vw 65vw;
+  height: 85vh;
+}
+
+.containerSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+
+  padding: 5px;
+  margin: 10px;
+
+  border-radius: 5px;
+  background-color: var(--color-shape);
+}
+
+.searchInput {
+  padding: 10px;
+  border-radius: 7px;
+  font-size: 1rem;
+
+  border: none;
+  outline: none;
+}
+
+.containerSearch h2 {
+  padding: 10px;
+}
+
+.Header-Result {
+  display: flex;
+  flex-direction: column;
+}
+
+.result {
+  padding: 5px;
+  margin: 10px;
+
+  background-color: var(--color-shape);
+  border-radius: 5px;
+}
+
+.header-Result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.header-part1 {
+  padding: 5px 15px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  border-right: 2px solid var(--color-primary);
+}
+
+.header-part1 span {
+  font-size: 0.9rem;
+  background-color: var(--color-shape-hover);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.header-part2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--color-shape-hover);
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+.header-part2 span:last-child {
+  margin: 5px;
+}
+
+.Result-img img {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  object-fit: cover;
+}
+
+.pop-up-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+
+  font-weight: 500;
+  background-color: var(--color-pop-up-backgroud);
+  color: var(--white);
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop-up {
+  background-color: var(--color-shape);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+.pop-up-tittle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+}
+
+.pop-up-close-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+
+  height: 30px;
+  width: 30px;
+  background-color: var(--color-shape-hover);
+  border-radius: 10px;
+  position: relative;
+}
+
+.pop-up-close-button:after {
+  position: absolute;
+  content: "\274c";
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.pop-up-close-button:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+
+.pop-up-body {
+  padding: 5px;
+  margin: 5px;
+}
+
+.repo {
+  background-color: var(--color-shape-hover);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.Header-repo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header-repo div span {
+  background-color: var(--color-shape);
+  padding: 5px;
+  margin: 3px;
+  border-radius: 5px;
+}

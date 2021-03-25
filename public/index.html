@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Profile</title>
+
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&family=Raleway:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <span>Search Profile</span>
+    </header>
+
+    <main class="main">
+      <section id="searchProfile" class="containerSearch">
+        <h2>Choise a Profile and search</h2>
+        <div class="searchProfile">
+          <input type="search" name="search" id="searchInput" class="searchInput" placeholder="Search for a name..." />
+        </div>
+        <button id="SearchButton" class="button">Search</button>
+      </section>
+
+      <section id="Result" class="result"></section>
+    </main>
+
+    <section id="pop-ups">
+      <div class="pop-up-container" id="notFoundProfile">
+        <div class="pop-up">
+          <div class="pop-up-tittle">
+            <h2>Not found the profile :(</h2>
+            <div>
+              <div class="pop-up-close-button" id="pop-up-close-notFoundProfile"></div>
+            </div>
+          </div>
+          <div class="pop-up-body">
+            <p>Unfortunately the profile was not found, please make sure you put the correct username.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pop-up-container" id="inputUndefined">
+        <div class="pop-up">
+          <div class="pop-up-tittle">
+            <h2>There was an error</h2>
+            <div>
+              <div class="pop-up-close-button" id="pop-up-close-inputUndefined"></div>
+            </div>
+          </div>
+          <div class="pop-up-body">
+            <p>Unfortunately, we cannot perform the search, make sure that you have not left the field empty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/src/scripts/App.js"></script>
+  </body>
+</html>
