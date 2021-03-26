@@ -258,3 +258,19 @@ li {
   margin: 3px;
   border-radius: 5px;
 }
+
+@media (max-width: 768px){
+
+  *{
+    font-size: 95%;
+  }
+
+  .main{
+    display:flex;
+    flex-direction: column;
+  }
+  .result{
+    min-height: 300px;
+  }
+
+}
