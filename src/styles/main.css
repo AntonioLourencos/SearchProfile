@@ -273,4 +273,11 @@ li {
     min-height: 300px;
   }
 
+  .Result-img img {
+    height: 90px;
+    width: 90px;
+    border-radius: 60px;
+    object-fit: cover;
+  }
+
 }
